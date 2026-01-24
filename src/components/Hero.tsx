@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -54,6 +54,12 @@ const Hero = () => {
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#contact">Get In Touch</a>
+            </Button>
+            <Button variant="outline" size="xl" asChild>
+              <a href="/resume.pdf" download="Resume.pdf">
+                <Download size={20} />
+                Download CV
+              </a>
             </Button>
           </div>
 
