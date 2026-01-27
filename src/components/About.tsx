@@ -39,24 +39,31 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a full-stack developer with 5+ years of experience building
-                web applications that users love. My journey started with
-                curiosity about how things work on the internet, and it has
-                evolved into a passion for creating impactful digital products.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I specialize in React, TypeScript, Node.js, and cloud
-                technologies. I believe in writing clean, efficient code and
-                following best practices to deliver robust solutions.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
-              </p>
-            </div>
+          <div className="space-y-6">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I'm a software engineer with over 2 years of experience building web and
+              mobile applications for real business needs. My journey started with a
+              strong interest in technology and system development during my studies, and
+              it has evolved into a passion for creating efficient and impactful digital
+              solutions.
+            </p>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Currently, I work as an Application Developer Analyst at PT Mitra Pinasthika
+              Mulia (MPM Honda Jatim), where I develop and maintain enterprise applications
+              to support business operations. Previously, I gained hands-on experience as
+              a Software Engineer Intern at Astra Honda Motor, contributing to system
+              analysis, database design, and high-standard application development.
+            </p>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I specialize in application development, system analysis, and database-driven
+              solutions using .NET, Java Spring Boot, SQL Server, and modern web technologies.
+              I believe in writing clean, efficient code and following best practices to
+              deliver scalable and reliable software solutions.
+            </p>
+          </div>
+
 
             <div className="grid grid-cols-2 gap-4">
               {highlights.map((item, index) => (

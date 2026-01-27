@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <span className="inline-block px-4 py-2 mb-6 text-sm font-mono text-primary bg-primary/10 border border-primary/30 rounded-full">
-              👋 Hello, I'm a Software Developer
+              👋 Hello My Name is Rian Fauzi, I'm a Software Developer
             </span>
           </div>
 
@@ -69,7 +69,7 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <a
-              href="https://github.com"
+              href="https://github.com/RianFauzii"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-300"
@@ -77,7 +77,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rianfauzidev/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-300"
@@ -85,7 +85,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:rianfauzi0123@gmail.com"
               className="p-3 text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-300"
             >
               <Mail size={24} />

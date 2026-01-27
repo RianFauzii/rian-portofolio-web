@@ -4,64 +4,52 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const featuredProjects = [
     {
-      title: "E-Commerce Platform",
+      title: "Mood Tracker Application (MindCare)",
       description:
-        "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "https://github.com",
-      live: "https://example.com",
+        "An Android and web-based application designed to track students' moods and provide personalized recommendations such as music, videos, and articles based on emotional states.",
+      tags: ["Java Android", "Spring Boot", "REST API", "Web App"],
+      github: "#",
+      live: "#",
       image: "bg-gradient-to-br from-primary/20 to-secondary/20",
     },
     {
-      title: "Task Management App",
+      title: "Project Based Learning Monitoring System",
       description:
-        "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
-      github: "https://github.com",
-      live: "https://example.com",
+        "A web-based monitoring system built to manage and track all project-based learning activities at Politeknik Astra, featuring role-based access and structured project workflows.",
+      tags: ["ASP.NET MVC", "SQL Server", "Visual Paradigm"],
+      github: "#",
+      live: "#",
       image: "bg-gradient-to-br from-secondary/20 to-accent/20",
     },
     {
-      title: "AI Content Generator",
+      title: "P5M Web Application",
       description:
-        "An AI-powered application that generates marketing content, blog posts, and social media captions using OpenAI's GPT API.",
-      tags: ["React", "Python", "FastAPI", "OpenAI"],
-      github: "https://github.com",
-      live: "https://example.com",
+        "A website developed to integrate attendance machines via API and manage student discipline records using CodeIgniter framework.",
+      tags: ["PHP", "CodeIgniter 3", "REST API", "MySQL"],
+      github: "#",
+      live: "#",
       image: "bg-gradient-to-br from-accent/20 to-primary/20",
     },
   ];
 
   const otherProjects = [
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather app with location-based forecasts",
-      tags: ["React", "API"],
+      title: "RT/RW Net Network Design Project",
+      description:
+        "Designed and simulated a community network infrastructure including topology planning, hardware analysis, and implementation using Cisco tools.",
+      tags: ["Cisco Packet Tracer", "GNS3", "Network Design"],
     },
     {
-      title: "Portfolio Generator",
-      description: "CLI tool to generate developer portfolios from config",
-      tags: ["Node.js", "CLI"],
+      title: "Database System Designs",
+      description:
+        "Designed relational databases for multiple academic and enterprise-level applications with performance and normalization considerations.",
+      tags: ["SQL Server", "MySQL", "Oracle"],
     },
     {
-      title: "Chat Application",
-      description: "Real-time messaging with Socket.io",
-      tags: ["Socket.io", "Express"],
-    },
-    {
-      title: "Budget Tracker",
-      description: "Personal finance management with charts",
-      tags: ["React", "Chart.js"],
-    },
-    {
-      title: "URL Shortener",
-      description: "Custom link shortening service with analytics",
-      tags: ["Go", "Redis"],
-    },
-    {
-      title: "Markdown Editor",
-      description: "Live preview markdown editor with syntax highlighting",
-      tags: ["React", "Prism.js"],
+      title: "System Analysis & Documentation",
+      description:
+        "Created complete system analysis diagrams and documentation for enterprise and academic applications.",
+      tags: ["Visual Paradigm", "System Design"],
     },
   ];
 
@@ -77,8 +65,8 @@ const Projects = () => {
               Things I've <span className="text-gradient">Built</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A selection of projects that showcase my skills and passion for
-              development
+              A selection of real-world and academic projects that reflect my
+              experience in software development and system design
             </p>
           </div>
 
@@ -94,7 +82,7 @@ const Projects = () => {
                 <div
                   className={`w-full lg:w-1/2 aspect-video ${project.image} rounded-xl border border-border flex items-center justify-center`}
                 >
-                  <span className="text-4xl">🚀</span>
+                  <span className="text-4xl">💻</span>
                 </div>
                 <div className="w-full lg:w-1/2 space-y-4">
                   <span className="text-primary font-mono text-sm">
@@ -119,16 +107,12 @@ const Projects = () => {
                   <div className="flex gap-4 pt-2">
                     <a
                       href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <Github size={22} />
                     </a>
                     <a
                       href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <ExternalLink size={22} />
@@ -152,20 +136,6 @@ const Projects = () => {
                 >
                   <div className="flex justify-between items-start mb-4">
                     <Folder className="text-primary" size={32} />
-                    <div className="flex gap-3">
-                      <a
-                        href="#"
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <Github size={18} />
-                      </a>
-                      <a
-                        href="#"
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <ExternalLink size={18} />
-                      </a>
-                    </div>
                   </div>
                   <h4 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {project.title}
@@ -192,5 +162,6 @@ const Projects = () => {
     </section>
   );
 };
+
 
 export default Projects;

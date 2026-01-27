@@ -29,11 +29,11 @@ const Contact = () => {
               Let's Work <span className="text-gradient">Together</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              I'm always interested in hearing about new projects and
-              opportunities. Feel free to reach out!
+              I'm open to new opportunities, collaborations, and professional
+              projects. Feel free to reach out to discuss how we can work together.
             </p>
           </div>
-
+  
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
@@ -44,14 +44,14 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:rianfauzi0123@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@example.com
+                    rianfauzi0123@gmail.com
                   </a>
                 </div>
               </div>
-
+  
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-lg shrink-0">
                   <MapPin size={24} />
@@ -61,13 +61,15 @@ const Contact = () => {
                     Location
                   </h3>
                   <p className="text-muted-foreground">
-                    San Francisco, CA
+                    Bekasi, Indonesia
                     <br />
-                    <span className="text-sm">Available for remote work</span>
+                    <span className="text-sm">
+                      Open to on-site and remote opportunities
+                    </span>
                   </p>
                 </div>
               </div>
-
+  
               <div className="p-6 bg-card border border-border rounded-xl">
                 <p className="text-muted-foreground italic">
                   "The best way to predict the future is to create it."
@@ -75,7 +77,7 @@ const Contact = () => {
                 <p className="text-sm text-primary mt-2">— Peter Drucker</p>
               </div>
             </div>
-
+  
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -93,17 +95,17 @@ const Contact = () => {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                  placeholder="Your name"
+                  placeholder="Your full name"
                   required
                 />
               </div>
-
+  
               <div>
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-foreground mb-2"
                 >
-                  Email
+                  Email Address
                 </label>
                 <input
                   type="email"
@@ -113,11 +115,11 @@ const Contact = () => {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                  placeholder="your@email.com"
+                  placeholder="your.email@example.com"
                   required
                 />
               </div>
-
+  
               <div>
                 <label
                   htmlFor="message"
@@ -133,11 +135,11 @@ const Contact = () => {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about your project or opportunity..."
                   required
                 />
               </div>
-
+  
               <Button type="submit" variant="hero" size="lg" className="w-full">
                 <Send size={18} />
                 Send Message
@@ -145,9 +147,10 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
   );
+  
 };
 
 export default Contact;
