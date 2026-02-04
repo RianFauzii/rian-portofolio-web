@@ -2,56 +2,63 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
-  const featuredProjects = [
-    {
-      title: "Mood Tracker Application (MindCare)",
-      description:
-        "An Android and web-based application designed to track students' moods and provide personalized recommendations such as music, videos, and articles based on emotional states.",
-      tags: ["Java Android", "Spring Boot", "REST API", "Web App"],
-      github: "#",
-      live: "#",
-      image: "bg-gradient-to-br from-primary/20 to-secondary/20",
-    },
-    {
-      title: "Project Based Learning Monitoring System",
-      description:
-        "A web-based monitoring system built to manage and track all project-based learning activities at Politeknik Astra, featuring role-based access and structured project workflows.",
-      tags: ["ASP.NET MVC", "SQL Server", "Visual Paradigm"],
-      github: "#",
-      live: "#",
-      image: "bg-gradient-to-br from-secondary/20 to-accent/20",
-    },
-    {
-      title: "P5M Web Application",
-      description:
-        "A website developed to integrate attendance machines via API and manage student discipline records using CodeIgniter framework.",
-      tags: ["PHP", "CodeIgniter 3", "REST API", "MySQL"],
-      github: "#",
-      live: "#",
-      image: "bg-gradient-to-br from-accent/20 to-primary/20",
-    },
-  ];
+const featuredProjects = [
+  {
+    title: "MindCare – Mood Tracker Android & Web Application",
+    description:
+      "A full-stack mood tracking platform developed for Politeknik Astra students to monitor emotional well-being and deliver personalized recommendations including music, videos, and articles based on user mood analytics.",
+    tags: ["Java Android", "Spring Boot", "REST API", "Web Application", "Data Processing"],
+    github: "#",
+    live: "#",
+    image: "bg-gradient-to-br from-primary/20 to-secondary/20",
+  },
+  {
+    title: "Project Based Learning Monitoring System",
+    description:
+      "A web-based enterprise-style system to manage and monitor all project-based learning activities at Politeknik Astra, featuring role-based access control, project workflows, and structured reporting dashboards.",
+    tags: ["ASP.NET MVC", "SQL Server", "System Design", "Role-Based Access"],
+    github: "#",
+    live: "#",
+    image: "bg-gradient-to-br from-secondary/20 to-accent/20",
+  },
+  {
+    title: "P5M Attendance & Discipline Management System",
+    description:
+      "A web application integrated with attendance machines via REST API to record attendance data and manage student discipline violations, improving monitoring efficiency for academic staff.",
+    tags: ["PHP", "CodeIgniter 3", "REST API", "MySQL", "Integration System"],
+    github: "#",
+    live: "#",
+    image: "bg-gradient-to-br from-accent/20 to-primary/20",
+  },
+];
 
-  const otherProjects = [
-    {
-      title: "RT/RW Net Network Design Project",
-      description:
-        "Designed and simulated a community network infrastructure including topology planning, hardware analysis, and implementation using Cisco tools.",
-      tags: ["Cisco Packet Tracer", "GNS3", "Network Design"],
-    },
-    {
-      title: "Database System Designs",
-      description:
-        "Designed relational databases for multiple academic and enterprise-level applications with performance and normalization considerations.",
-      tags: ["SQL Server", "MySQL", "Oracle"],
-    },
-    {
-      title: "System Analysis & Documentation",
-      description:
-        "Created complete system analysis diagrams and documentation for enterprise and academic applications.",
-      tags: ["Visual Paradigm", "System Design"],
-    },
-  ];
+const otherProjects = [
+  // {
+  //   title: "RT/RW Net Community Network Infrastructure Design",
+  //   description:
+  //     "Designed and simulated a full community network system including topology planning, bandwidth analysis, and hardware selection using Cisco Packet Tracer and GNS3.",
+  //   tags: ["Network Design", "Cisco Packet Tracer", "GNS3", "Infrastructure Planning"],
+  // },
+  {
+    title: "Enterprise Database System Architecture",
+    description:
+      "Designed normalized relational database schemas for multiple academic and enterprise-style systems with performance and scalability considerations.",
+    tags: ["SQL Server", "MySQL", "Oracle", "Database Design"],
+  },
+  {
+    title: "System Analysis & Technical Documentation",
+    description:
+      "Produced comprehensive system analysis diagrams including use case, ERD, and process flows for software development projects.",
+    tags: ["Visual Paradigm", "System Analysis", "ERD", "UML"],
+  },
+  {
+    title: "Internal Business Process Automation Tools",
+    description:
+      "Developed internal automation scripts and small applications to support business processes and improve operational efficiency in enterprise environment.",
+    tags: [".NET", "SQL Server", "Process Automation", "API Integration"],
+  },
+];
+
 
   return (
     <section id="projects" className="py-20 md:py-32 bg-card/50">

@@ -1,7 +1,7 @@
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-
+import pdfCv from "@/assets/CV_Rian Fauzi_0320210063_MITK3.pdf";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -56,7 +56,7 @@ const Hero = () => {
               <a href="#contact">Get In Touch</a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href="/resume.pdf" download="Resume.pdf">
+              <a href={pdfCv} download="CV_Rian-Fauzi.pdf">
                 <Download size={20} />
                 Download CV
               </a>

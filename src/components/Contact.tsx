@@ -61,7 +61,7 @@ const Contact = () => {
                     Location
                   </h3>
                   <p className="text-muted-foreground">
-                    Bekasi, Indonesia
+                    Surabaya, Indonesia
                     <br />
                     <span className="text-sm">
                       Open to on-site and remote opportunities

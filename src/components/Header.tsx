@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import pdfCv from "@/assets/CV_Rian Fauzi_0320210063_MITK3.pdf";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,9 +51,12 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" size="sm">
-              Resume
+            <Button variant="hero" size="sm" asChild>
+              <a href={pdfCv} download="CV_Rian-Fauzi.pdf">
+                Resume
+              </a>
             </Button>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,9 +82,12 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="hero" className="mt-2">
-                Resume
+              <Button variant="hero" size="sm" asChild>
+                <a href={pdfCv} download="CV_Rian-Fauzi.pdf">
+                  Resume
+                </a>
               </Button>
+
             </div>
           </div>
         )}

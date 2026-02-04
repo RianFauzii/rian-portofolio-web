@@ -1,56 +1,77 @@
 import { Briefcase, Calendar } from "lucide-react";
 
 const Experience = () => {
-  const experiences = [
-    {
-      title: "Senior Full-Stack Developer",
-      company: "Tech Innovations Inc.",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: [
-        "Lead development of microservices architecture serving 1M+ users",
-        "Mentored junior developers and conducted code reviews",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Built real-time collaboration features using WebSocket technology",
-      ],
-    },
-    {
-      title: "Full-Stack Developer",
-      company: "Digital Solutions Ltd.",
-      location: "New York, NY",
-      period: "2020 - 2022",
-      description: [
-        "Developed and maintained multiple React applications",
-        "Designed RESTful APIs using Node.js and Express",
-        "Optimized database queries improving performance by 40%",
-        "Collaborated with UX team to implement responsive designs",
-      ],
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartUp Hub",
-      location: "Austin, TX",
-      period: "2018 - 2020",
-      description: [
-        "Built interactive dashboards using React and D3.js",
-        "Implemented state management solutions with Redux",
-        "Created reusable component libraries for design consistency",
-        "Participated in agile sprints and daily standups",
-      ],
-    },
-    {
-      title: "Junior Developer",
-      company: "Web Agency Pro",
-      location: "Remote",
-      period: "2017 - 2018",
-      description: [
-        "Developed responsive websites for various clients",
-        "Worked with WordPress and custom PHP solutions",
-        "Gained experience in JavaScript and jQuery",
-        "Learned version control best practices with Git",
-      ],
-    },
-  ];
+const experiences = [
+  {
+    title: "Supervisor IT Application Developer Analyst",
+    company: "PT Mitra Pinasthika Mulia (MPM Honda Jatim)",
+    location: "Surabaya, Indonesia",
+    period: "2024 - Present",
+    description: [
+      "Mengembangkan dan memelihara aplikasi internal berbasis .NET dan SQL Server untuk proses klaim, approval, dan reporting",
+      "Mengoptimasi stored procedure kompleks sehingga waktu eksekusi laporan berkurang hingga 60%",
+      "Membangun sistem approval terintegrasi antar aplikasi untuk mengurangi error status data",
+      "Mengembangkan API dan fitur automation untuk mempercepat proses bisnis internal",
+
+      "Tools & Technologies: C#, ASP.NET MVC, SQL Server, LINQ, REST API, JavaScript, Git",
+
+      "Key Achievements:",
+      "• Optimasi query SQL kompleks dari >1 menit menjadi ±10 detik",
+      "• Mengurangi kesalahan data approval hingga lebih dari 70%",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "PT Astra Honda Motor",
+    location: "Jakarta, Indonesia",
+    period: "Dec 2023 - Jun 2024",
+    description: [
+      "Merancang dan mengimplementasikan basis data aplikasi enterprise",
+      "Membuat dokumentasi analisis sistem untuk aplikasi produksi dan operasional",
+      "Mengembangkan sistem informasi berbasis web sesuai standar perusahaan",
+      "Berkolaborasi dengan tim developer dan QA dalam proses testing dan deployment",
+
+      "Tools & Technologies: Java Spring Boot, SQL Server, REST API, Git, Visual Paradigm",
+
+      "Key Achievements:",
+      "• Meningkatkan efisiensi pengolahan data aplikasi hingga 40%",
+      "• Berkontribusi pada pengembangan modul sistem produksi skala besar",
+    ],
+  },
+  {
+    title: "Staff Marketing",
+    company: "Synapsetech.id",
+    location: "Indonesia",
+    period: "Aug 2023 - Oct 2023",
+    description: [
+      "Melakukan riset pasar dan analisis calon pelanggan setiap minggu",
+      "Menyusun strategi promosi digital untuk meningkatkan engagement klien",
+      "Berhasil menjangkau hingga 40 klien potensial per minggu",
+
+      "Tools & Technologies: Google Sheets, Digital Marketing Tools, CRM",
+
+      "Key Achievements:",
+      "• Meningkatkan leads mingguan hingga 2x lipat dalam 1 bulan",
+    ],
+  },
+  {
+    title: "IT Operator & Network Support",
+    company: "Faisal Net",
+    location: "Madiun, Indonesia",
+    period: "2015 - 2018",
+    description: [
+      "Mengelola dan melakukan troubleshooting lebih dari 7 komputer dan jaringan lokal",
+      "Menyusun laporan keuangan harian dan mingguan",
+      "Menjaga stabilitas jaringan operasional warnet",
+
+      "Tools & Technologies: Windows Server, Networking, Troubleshooting Hardware",
+
+      "Key Achievements:",
+      "• Mengurangi downtime jaringan hingga 50%",
+    ],
+  },
+];
+
 
   return (
     <section id="experience" className="py-20 md:py-32">
