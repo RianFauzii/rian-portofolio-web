@@ -4,7 +4,12 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/rian-portofolio-web/", // 
+  base: "/rian-portofolio-web/",
+
+  build: {
+    outDir: "docs",       // ⭐ output langsung ke docs
+    emptyOutDir: true,
+  },
 
   server: {
     host: "::",
